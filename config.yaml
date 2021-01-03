@@ -1,0 +1,11 @@
+region: ap-northeast-1
+cluster: example
+service: example-ecspresso
+service_definition: service.json
+task_definition: task.json
+timeout: 5m0s
+plugins:
+- name: tfstate
+  config:
+    path: terraform.tfstate
+appspec: null

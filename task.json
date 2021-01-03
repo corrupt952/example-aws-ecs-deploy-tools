@@ -1,0 +1,34 @@
+{
+  "containerDefinitions": [
+    {
+      "command": [],
+      "cpu": 256,
+      "entryPoint": [],
+      "environment": [],
+      "essential": true,
+      "image": "nginx:latest",
+      "links": [],
+      "memoryReservation": 512,
+      "mountPoints": [],
+      "name": "nginx",
+      "portMappings": [
+        {
+          "containerPort": 80,
+          "hostPort": 80,
+          "protocol": "tcp"
+        }
+      ],
+      "volumesFrom": []
+    }
+  ],
+  "cpu": "256",
+  "executionRoleArn": "arn:aws:iam::142016784803:role/example",
+  "family": "example",
+  "memory": "512",
+  "networkMode": "awsvpc",
+  "placementConstraints": [],
+  "requiresCompatibilities": [
+    "FARGATE"
+  ],
+  "volumes": []
+}
